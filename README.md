@@ -1,20 +1,19 @@
 # extra_function
 some new methods not found for python 
-```
-from extra_function import extra_function
 
 
+### `hold_values(values: list)`
+هذه الدالة تأخذ قائمة القيم كمدخل وتقوم بتخزينها. ليتم استخدامها في دالة ()literal_type
+
+### `literal_type(val)`
+تعتبر هذه الدالة تمثيل النوع الحرفي في typescript
+هذه الدالة تأخذ قيمة كمدخل وتحقق ما إذا كانت القيمة موجودة في القائمة التي تم تخزينها مسبقًا. إذا كانت القيمة موجودة، فإن الدالة ترجع القيمة نفسها، وإلا فإنها ترجع `None`.
+
+### `element_itself(element: any, lst: list)`
+هذه الدالة تأخذ عنصرًا وقائمة وتحقق ما إذا كان العنصر موجودًا في القائمة المعطاة. إذا كان العنصر موجودًا، فإن الدالة ترجع العنصر نفسه، وإلا فإنها ترجع `None`.
+
+### `ternary_operator(condition, value1, value2)`
+تعتبر هذه الدالة تمثيل لعامل تيرنري في javascript
+هذه الدالة تنفذ عملية شرطية ثلاثية، حيث تُرجع `value1` إذا كان الشرط صحيحًا، وإلا تُرجع `value2`. يمكن استخدام هذه الدالة كبديل لعملية `if-else` عندما يكون الشرط بسيطًا.
 
 
-extra_function.hold_values([1, 2, 3])
-print(extra_function.literal_type(1))
-
-
-
-print(extra_function.element_itself(4, [4,5,6]))
-
-x = 5
-y = 10
-
-print(extra_function.ternary_operator(x > y, x, y))
-```
